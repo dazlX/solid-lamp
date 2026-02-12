@@ -1,8 +1,8 @@
-package api
+package Api
 
 import "time"
 
-type healthResponse struct {
+type HealthResponse struct {
 	Status    string    `json:"status"`
 	Timestamp time.Time `json:"timestamp"`
 }
