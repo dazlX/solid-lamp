@@ -1,4 +1,4 @@
-package solidlamp
+package main
 
 import (
 	Server "solid-lamp/internal/server"
