@@ -1,0 +1,5 @@
+package solidlamp
+
+import (
+	
+)
