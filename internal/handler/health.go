@@ -2,6 +2,7 @@ package handler
 
 import (
 	"encoding/json"
+	"log"
 	"net/http"
 	Api "solid-lamp/api"
 	"time"
@@ -13,5 +14,9 @@ func HealthHandler(w http.ResponseWriter, r *http.Request) {
 		Timestamp: time.Now(),
 	}
 
-	json.NewEncoder(w).Encode(res)
+	err := json.NewEncoder(w).Encode(res)
+
+	if err != nil {
+		log.Println(err)
+	}
 }

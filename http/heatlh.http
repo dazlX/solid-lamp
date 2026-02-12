@@ -1,1 +1,7 @@
-GET http://localhost:8080/api/health
+@host=localhost
+@port=8080
+
+GET http://{{host}}:{{port}}/api/health
+
+###
+GET http://{{host}}:{{port}}/
