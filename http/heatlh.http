@@ -4,4 +4,4 @@
 GET http://{{host}}:{{port}}/api/health
 
 ###
-GET http://{{host}}:{{port}}/
+GET http://{{host}}:{{port}}/api/sendemail

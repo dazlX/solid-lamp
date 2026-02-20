@@ -10,6 +10,7 @@ func Run() {
 	log.Println("Server Started")
 	http.HandleFunc("/api/health", handler.HealthHandler)
 	http.HandleFunc("/", handler.RootHandler)
+	http.HandleFunc("/api/sendemail", handler.SendEmail)
 	err := http.ListenAndServe(":8080", nil)
 
 	if err == nil {
